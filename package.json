@@ -1,0 +1,16 @@
+{
+  "name": "tailwindcssv3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:tailwind": "npx tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
