@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:tailwind": "npx tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
+    "watch:tailwind": "npx tailwindcss -i ./css/main.css -o ./dist/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
