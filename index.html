@@ -8,16 +8,38 @@
     <link href="dist/main.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="min-h-screen px-5 md:px-10 bg-slate-100">
+    <div
+      class="
+        min-h-screen
+        px-5
+        md:px-10
+        bg-slate-100
+        dark:bg-gray-800 dark:text-white
+      "
+    >
       <nav class="py-3 flex flex-row justify-between">
-        <div class="hover:blur-sm">
-          <img class="m-0 p-0" src="https://icongr.am/jam/hashtag.svg?size=40&color=currentColor" alt="logo">
+        <div onclick="handleColorTheme()">
+          <div
+            class="
+              px-2
+              py-0.5
+              flex flex-row
+              gap-3
+              rounded-full
+              bg-indigo-400
+              text-xl
+            "
+          >
+            <span id="light" class="cursor-pointer mx-0.5"></span>
+            <span id="dark" class="cursor-pointer mx-0.5"></span>
+          </div>
         </div>
-        <ul class="flex flex-row gap-7 md:gap-16">
+        <ul class="flex flex-row gap-7 md:gap-16 dark:text-white">
           <li
             class="
               hover:text-indigo-400 hover:border-b-2 hover:border-indigo-400
-              cursor-pointer self-center
+              cursor-pointer
+              self-center
             "
           >
             Home
@@ -25,7 +47,8 @@
           <li
             class="
               hover:text-indigo-400 hover:border-b-2 hover:border-indigo-400
-              cursor-pointer self-center
+              cursor-pointer
+              self-center
             "
           >
             About
@@ -33,7 +56,8 @@
           <li
             class="
               hover:text-indigo-400 hover:border-b-2 hover:border-indigo-400
-              cursor-pointer self-center
+              cursor-pointer
+              self-center
             "
           >
             Contact
@@ -49,6 +73,7 @@
           grid grid-cols-1
           md:grid-cols-2
           bg-white
+          dark:bg-gray-900
           rounded-md
           shadow-md
           text-center
@@ -65,6 +90,7 @@
               font-bold
               mb-1.5
               md:border-l-4 md:border-indigo-400
+              dark:text-white
             "
           >
             Save a Koala!
@@ -127,5 +153,6 @@
         </div>
       </main>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
