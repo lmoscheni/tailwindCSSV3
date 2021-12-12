@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,17 @@
         dark:bg-gray-800 dark:text-white
       "
     >
-      <nav class="py-3 flex flex-row justify-between">
+      <nav
+        class="
+          py-3
+          flex flex-row
+          justify-between
+          sticky
+          top-0
+          bg-slate-100
+          dark:bg-gray-800
+        "
+      >
         <div onclick="handleColorTheme()">
           <div
             class="
@@ -42,7 +52,7 @@
               self-center
             "
           >
-            Home
+            <a href="">Home</a>
           </li>
           <li
             class="
@@ -51,7 +61,7 @@
               self-center
             "
           >
-            About
+            <a href="#about">About</a>
           </li>
           <li
             class="
@@ -60,7 +70,7 @@
               self-center
             "
           >
-            Contact
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -152,6 +162,122 @@
           />
         </div>
       </main>
+      <section id="About" class="mt-10">
+        <h2
+          class="
+            text-2xl
+            md:text-3xl
+            first-letter:text-4xl first-letter:text-indigo-400
+          "
+        >
+          About
+        </h2>
+        <p class="px-2 py-4 text-md md:text-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus culpa,
+          quia, dignissimos perferendis reiciendis labore sequi quidem odit
+          impedit autem quibusdam error nisi temporibus officia molestiae
+          consectetur quam quis nam. Eos perferendis at debitis ullam! Officia
+          nesciunt dolorum quae aut voluptate quos minus veritatis id cum neque
+          consectetur ducimus mollitia aliquid quis, nulla sunt tempora
+          blanditiis velit animi eligendi exercitationem? Est nihil pariatur
+          quisquam aliquid commodi incidunt fuga exercitationem hic cupiditate
+          neque accusantium corrupti, minus facere reiciendis et ut facilis.
+          Expedita, voluptatibus perferendis. Repudiandae, labore ut eius earum
+          eaque alias. Totam, omnis porro. Ut et at delectus rerum quidem illum,
+          maxime ipsum cum assumenda quod culpa veritatis corporis in nobis
+          earum ipsa? Dolore officiis cum aliquam ut voluptatum quisquam!
+          Labore. Veniam eos dolorum inventore quia commodi dicta, aut ab non,
+          ut earum at alias ducimus. Quo a ad officia necessitatibus voluptates
+          sequi veritatis iure, qui corporis, dicta quisquam voluptate.
+          Expedita?
+        </p>
+        <p class="px-2 py-4 text-md md:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat esse
+          sequi totam necessitatibus, dolor architecto molestiae doloribus
+          reprehenderit eum quod corporis at magni commodi eveniet est ipsa
+          animi sint. Itaque! Ab totam aut rem obcaecati adipisci repudiandae
+          minima ipsam impedit est sit laborum quae ducimus ea tempore,
+          possimus, libero accusamus explicabo sequi provident. Numquam quas
+          modi esse recusandae consequuntur itaque! Assumenda ipsa ab explicabo
+          natus facere alias ratione, placeat praesentium rerum? Ab molestias
+          quod nostrum incidunt, aspernatur eligendi reprehenderit temporibus
+          quos? Fugiat dolor, non tempora atque vitae facilis laboriosam
+          dignissimos.
+        </p>
+        <p class="px-2 py-4 text-md md:text-lg">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+          voluptatem recusandae nihil atque facilis id repellat perspiciatis
+          dolore, amet repellendus accusantium. Amet error alias iste dolor quo.
+          Rem, illo ex.
+        </p>
+      </section>
+      <section id="contact" class="mt-10 pb-12">
+        <h2
+          class="
+            text-2xl
+            md:text-3xl
+            first-letter:text-4xl first-letter:text-indigo-400
+          "
+        >
+          Contact
+        </h2>
+        <p class="px-2 py-4 text-md md:text-lg">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+          voluptatibus animi, nemo asperiores voluptates ducimus porro numquam
+          repellendus officiis iste dolorum rerum nam? Sequi provident tempora
+          ad aperiam est. Optio.
+        </p>
+        <div class="w-full my-5 p-4 flex flex-row justify-center">
+          <form
+            class="
+              w-[35em]
+              p-12
+              flex flex-row flex-wrap
+              rounded-lg
+              gap-0
+              bg-gray-300
+              dark:bg-gray-900
+            "
+          >
+            <label for="name" class="pb-0.5 font-semibold dark:text-white"
+              >Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm"
+            />
+            <label for="email" class="pb-0.5 font-semibold dark:text-white"
+              >Email</label
+            >
+            <input
+              type="text"
+              id="email"
+              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm"
+            />
+            <label for="message" class="pb-0.5 font-semibold dark:text-white"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="w-full h-28 mb-3 px-2 bg-white rounded-md shadow-sm"
+            ></textarea>
+            <button
+              class="
+                py-2
+                w-full
+                rounded-full
+                bg-indigo-400
+                text-white
+                font-bold
+                hover:bg-white hover:text-indigo-400
+              "
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
     <script src="js/main.js"></script>
   </body>
