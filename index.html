@@ -31,8 +31,8 @@
         <div onclick="handleColorTheme()">
           <div
             class="
-              px-2
-              py-0.5
+              px-1.5
+              py-0.25
               flex flex-row
               gap-3
               rounded-full
@@ -76,19 +76,19 @@
       </nav>
       <main
         class="
-          mt-5
-          md:mt-10
-          p-5
-          md:p-10
-          grid grid-cols-1
-          md:grid-cols-2
-          bg-white
-          dark:bg-gray-900
-          rounded-md
-          shadow-md
-          text-center
-          md:text-left
-        "
+        mt-5
+        md:mt-10
+        p-5
+        md:p-10
+        flex flex-col justify-around
+        md:flex-row
+        bg-white
+        dark:bg-gray-900
+        rounded-md
+        shadow-md
+        text-center
+        md:text-left
+      "
       >
         <div class="self-center mb-10 md:m-0">
           <h1
@@ -156,7 +156,7 @@
         </div>
         <div class="flex flex-flow justify-center md:max-w-lg">
           <img
-            class="aspect-square object-cover max-w-xs lg:max-w-lg"
+            class="p-5 md:p-0 aspect-square object-cover max-w-xs lg:max-w-lg"
             src="https://cdn.britannica.com/26/162626-050-3534626F/Koala.jpg"
             alt="koala image"
           />
@@ -167,11 +167,14 @@
           class="
             text-2xl
             md:text-3xl
-            first-letter:text-4xl first-letter:text-indigo-400
+            first-letter:text-3xl first-letter:text-indigo-400
           "
         >
           About
         </h2>
+        <ul>
+          <li></li>
+        </ul>
         <p class="px-2 py-4 text-md md:text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus culpa,
           quia, dignissimos perferendis reiciendis labore sequi quidem odit
@@ -216,7 +219,7 @@
           class="
             text-2xl
             md:text-3xl
-            first-letter:text-4xl first-letter:text-indigo-400
+            first-letter:text-3xl first-letter:text-indigo-400
           "
         >
           Contact
@@ -249,7 +252,7 @@
             <input
               id="name"
               type="text"
-              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm"
+              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm focus:outline-none focus:border-2 focus:border-indigo-400"
             />
             <label for="email" class="pb-0.5 font-semibold dark:text-white"
               >Email</label
@@ -257,14 +260,14 @@
             <input
               type="text"
               id="email"
-              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm"
+              class="w-full h-10 mb-3 px-2 bg-white rounded-md shadow-sm focus:outline-none focus:border-2 focus:border-indigo-400"
             />
             <label for="message" class="pb-0.5 font-semibold dark:text-white"
               >Message</label
             >
             <textarea
               id="message"
-              class="w-full h-28 mb-3 px-2 bg-white rounded-md shadow-sm"
+              class="w-full h-28 mb-3 px-2 bg-white rounded-md shadow-sm focus:outline-none focus:border-2 focus:border-indigo-400"
             ></textarea>
             <button
               class="
