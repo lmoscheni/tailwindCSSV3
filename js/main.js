@@ -1,22 +1,27 @@
 function handleColorTheme() {
-  if (document.documentElement.classList.contains("dark")) {
-    document.documentElement.classList.remove("dark");
-    document.getElementById("light").innerText = "🌝";
-    document.getElementById("dark").innerText = "";
-  } else {
+  const colorTheme = window.localStorage.getItem("colorTheme") || "light";
+
+  if (colorTheme === "light") {
+    window.localStorage.setItem("colorTheme", "dark");
     document.documentElement.classList.add("dark");
-    document.getElementById("dark").innerText = "🌚";
-    document.getElementById("light").innerText = "";
+    document.getElementById("light").classList.remove("hidden");
+    document.getElementById("dark").classList.add("hidden");
+  } else {
+    window.localStorage.setItem("colorTheme", "light");
+    document.documentElement.classList.remove("dark");
+    document.getElementById("dark").classList.remove("hidden");
+    document.getElementById("light").classList.add("hidden");
   }
 }
 
 function renderDefaultSwith() {
-  if (document.documentElement.classList.contains("dark")) {
-    document.getElementById("light").innerText = "";
-    document.getElementById("dark").innerText = "🌚";
+  const colorTheme = window.localStorage.getItem("colorTheme") || "light";
+
+  if (colorTheme === "light") {
+    document.getElementById("dark").classList.remove("hidden");
   } else {
-    document.getElementById("light").innerText = "🌝";
-    document.getElementById("dark").innerText = "";
+    document.documentElement.classList.add("dark");
+    document.getElementById("light").classList.remove("hidden");
   }
 }
 
